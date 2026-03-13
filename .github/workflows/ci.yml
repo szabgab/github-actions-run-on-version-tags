@@ -17,4 +17,5 @@ jobs:
 
       - name: show git tags
         run: |
-          git tags
+          git --help
+          git tag
