@@ -1,7 +1,9 @@
-name: CI
+name: Git tags
 
 on:
   push:
+    tags:
+      - 'v*'
   workflow_dispatch:
 
 jobs:
