@@ -15,6 +15,10 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
+      - name: git log
+        run: |
+          git log
+
       - name: show git tags
         run: |
           git tag
