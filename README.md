@@ -19,5 +19,14 @@ git tag v1
 # Make some changes to README
 git commit -m update
 git push  # this triggers the regular push job.
-git push --tags
+git push --tags  # this triggers the tag-job only
+```
+
+* make a change
+* add a tag
+* git push --tag
+  This will push out the commit and the tag, but because we did not write the stand-alone `git push`
+the current remote branch won't show the new commit. (But we can visit the tag and see the new commit)
+
+
 
